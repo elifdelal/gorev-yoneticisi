@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+/* "dark" sınıfı <html> etiketine eklendiğinde koyu tema devreye girer */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+
+  --animate-fade-in: fade-in 0.35s ease-out both;
+  --animate-pop: pop 0.2s ease-out both;
+
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(8px);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+
+  @keyframes pop {
+    from {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+}
+
+body {
+  @apply bg-slate-50 text-slate-800 antialiased transition-colors dark:bg-slate-950 dark:text-slate-100;
+}
+
+/* Tarih seçici ikonunun koyu temada görünmesi için */
+.dark input[type='date'] {
+  color-scheme: dark;
+}
