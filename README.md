@@ -3,7 +3,7 @@
 TNC Group **Online Staj Programı – Web Geliştirme** projesi kapsamında geliştirilmiş bir görev (TODO) yönetim uygulaması.
 Görevler tarayıcının **LocalStorage** alanında saklanır; sayfa yenilense bile veriler kaybolmaz.
 
-🔗 **Canlı Demo:** _Netlify linki buraya eklenecek_
+🔗 **Canlı Demo:** https://elif-gorev-yoneticisi.netlify.app
 
 ![Ekran görüntüsü](docs/ekran-goruntusu.jpg)
 
